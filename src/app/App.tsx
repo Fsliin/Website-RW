@@ -7,7 +7,11 @@ const management = [
   { role: "Ketua RW", name: "Ibu. Dewi Fatimah", phone: "0812-3456-7890" },
   { role: "Sekretaris", name: "Dummy", phone: "0856-7890-1234" },
   { role: "Bendahara", name: "Dummy", phone: "0878-2345-6789" },
-  { role: "Seksi Keamanan", name: "Dummy", phone: "0821-9876-5432" },
+  { role: "RT 1", name: "Dummy", phone: "0821-9876-5432" },
+  { role: "RT 2", name: "Dummy", phone: "0821-9876-5432" },
+  { role: "RT 3", name: "Dummy", phone: "0821-9876-5432" },
+  { role: "RT 4", name: "Dummy", phone: "0821-9876-5432" },
+  { role: "RT 5", name: "Dummy", phone: "0821-9876-5432" },
 ];
 
 const galleryItems = [
@@ -163,7 +167,7 @@ function Hero() {
         </h1>
 
         <p className="text-white/75 text-lg leading-relaxed max-w-2xl mx-auto mb-10">
-          Bersama membangun lingkungan yang aman, bersih, dan harmonis. Informasi warga, kegiatan, dan laporan keuangan RT tersedia di sini untuk semua.
+          Bersama membangun lingkungan yang aman, bersih, dan harmonis. Informasi warga, kegiatan, dan laporan keuangan RW tersedia di sini untuk semua.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4">
@@ -214,20 +218,20 @@ function About() {
             </div>
             <h2 className="text-foreground font-extrabold mb-5"
               style={{ fontSize: "clamp(1.75rem, 4vw, 2.5rem)", lineHeight: 1.2 }}>
-              Pengurus RT yang Transparan dan Amanah
+              Pengurus RW yang Transparan dan Amanah
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              RT 07 / RW 03 Kelurahan Sukamaju adalah unit pemerintahan terkecil yang melayani 48 kepala keluarga. Kami berkomitmen untuk memberikan pelayanan terbaik, menjaga keamanan, kebersihan, dan keharmonisan lingkungan bersama.
+              RW Mekarsari 04 Merupakan RW terletak di mekarsari kec cibatu kab garut, Kami berkomitmen untuk memberikan pelayanan terbaik, menjaga keamanan, kebersihan, dan keharmonisan lingkungan bersama.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Setiap warga berhak mengetahui pengelolaan iuran (IPL) secara terbuka. Laporan keuangan dipublikasikan setiap bulan agar tercipta kepercayaan dan akuntabilitas bersama.
+              Setiap warga berhak mengetahui pengelolaan dana secara terbuka. Laporan keuangan dipublikasikan setiap bulan agar tercipta kepercayaan dan akuntabilitas bersama, dan informasi kegiatan yang akan datang.
             </p>
 
             <div className="grid grid-cols-2 gap-3">
               {[
-                { label: "Tahun Berdiri", value: "2008" },
+                { label: "Tahun Berdiri", value: "2026" },
                 { label: "Total Warga", value: "±192 Jiwa" },
-                { label: "RT Aktif", value: "Periode 2023–2026" },
+                { label: "RW Aktif", value: "Periode 2026–NOW" },
                 { label: "IPL / Bulan", value: "Rp 75.000" },
               ].map(({ label, value }) => (
                 <div key={label} className="bg-card border border-border rounded-xl p-4">
