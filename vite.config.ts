@@ -23,11 +23,11 @@ export default defineConfig({
     tailwindcss(),
   ],
   // 👇 INI BAGIAN YANG KITA TAMBAHKAN 👇
-  server: {
-    host: '0.0.0.0',
-    port: 5173,
-    allowedHosts: true
-  },
+  //server: {
+    //host: '0.0.0.0',
+    //port: 5173,
+    //allowedHosts: true
+ // },
   // 👆 ============================== 👆
   resolve: {
     alias: {
