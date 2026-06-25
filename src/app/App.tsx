@@ -4,14 +4,14 @@ import { Menu, X, MapPin, Phone, Mail, ChevronDown, TrendingUp, TrendingDown, Wa
 // ─── Data ────────────────────────────────────────────────────────────────────
 
 const management = [
-  { role: "Ketua RW", name: "Ibu. Dewi Fatimah", phone: "0812-3456-7890" },
-  { role: "Sekretaris", name: "Dummy", phone: "0856-7890-1234" },
-  { role: "Bendahara", name: "Dummy", phone: "0878-2345-6789" },
-  { role: "RT 1", name: "Dummy", phone: "0821-9876-5432" },
-  { role: "RT 2", name: "Dummy", phone: "0821-9876-5432" },
-  { role: "RT 3", name: "Dummy", phone: "0821-9876-5432" },
-  { role: "RT 4", name: "Dummy", phone: "0821-9876-5432" },
-  { role: "RT 5", name: "Dummy", phone: "0821-9876-5432" },
+  { icon:"AH", role: "Ketua RW", name: "Ibu. Dewi Fatimah", phone: "0812-3456-7890" },
+  { icon:"AH", role: "Sekretaris", name: "Dummy", phone: "0856-7890-1234" },
+  { icon:"AH", role: "Bendahara", name: "Dummy", phone: "0878-2345-6789" },
+  { icon:"AH", role: "RT 1", name: "Dummy", phone: "0821-9876-5432" },
+  { icon:"AH", role: "RT 2", name: "Dummy", phone: "0821-9876-5432" },
+  { icon:"AH", role: "RT 3", name: "Dummy", phone: "0821-9876-5432" },
+  { icon:"AH", role: "RT 4", name: "Dummy", phone: "0821-9876-5432" },
+  { icon:"AH", role: "RT 5", name: "Dummy", phone: "0821-9876-5432" },
 ];
 
 const galleryItems = [
