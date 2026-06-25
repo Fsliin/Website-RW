@@ -261,7 +261,11 @@ function About() {
                   <div key={role} className="flex items-center justify-between py-2 border-b border-border last:border-0">
                     <div className ="flex flex-row items-center gap-3">
                       <div className="bg-sky-500/80 p-5 rounded-md">
-                        <div className="text-xl text-primary font-bold">{icon}</div>
+                        <img
+                            src={icon}
+                            alt="Lingkungan perumahan yang nyaman dan asri"
+                            className="w-full h-full object-cover opacity-35"
+                          />
                       </div>
                       <div>
                         <div className="text-xs text-primary font-semibold">{role}</div>
