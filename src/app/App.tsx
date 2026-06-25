@@ -259,7 +259,7 @@ function About() {
               <div className="space-y-3">
                 {management.map(({ icon, role, name, phone }) => (
                   <div key={role} className="flex items-center justify-between py-2 border-b border-border last:border-0">
-                    <div className ="flex flex-row items-center">
+                    <div className ="flex flex-row items-center gap-3">
                       <div className="bg-sky-500/80 p-5 rounded-md">
                         <div className="text-xl text-primary font-bold">{icon}</div>
                       </div>
