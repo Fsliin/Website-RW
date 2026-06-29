@@ -7,11 +7,11 @@ const management = [
   { icon:"https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "Ketua RW", name: "Ibu. Dewi Fatimah", phone: "0812-3456-7890" },
   { icon:"https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "Sekretaris", name: "Dummy", phone: "0856-7890-1234" },
   { icon:"https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "Bendahara", name: "Dummy", phone: "0878-2345-6789" },
-  { icon:"https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "RT 1", name: "Dummy", phone: "0821-9876-5432" },
-  { icon:"https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "RT 2", name: "Dummy", phone: "0821-9876-5432" },
-  { icon:"AH", role: "RT 3", name: "Dummy", phone: "0821-9876-5432" },
-  { icon:"AH", role: "RT 4", name: "Dummy", phone: "0821-9876-5432" },
-  { icon:"AH", role: "RT 5", name: "Dummy", phone: "0821-9876-5432" },
+  { icon:"https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "RT 1", name: "Ibu Teti & Bpk Awab", phone: "0821-dummy" },
+  { icon:"https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "RT 2", name: "Dummy", phone: "0821-dummy" },
+  { icon:"AH", role: "RT 3", name: "Ibu Eni & Bpk Burhan", phone: "0821-dummy" },
+  { icon:"AH", role: "RT 4", name: "Bpk Yadi", phone: "0821-dummy" },
+  { icon:"AH", role: "RT 5", name: "Ibu Mariyam & Bpk Din Din", phone: "0821-dummy" },
 ];
 
 const galleryItems = [
