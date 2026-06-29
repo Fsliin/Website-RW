@@ -258,28 +258,37 @@ function About() {
               </h3>
               <div className="space-y-3">
                 {management.map(({ icon, role, name, phone }) => (
-                  <div key={role} className="flex items-center justify-between py-2 border-b border-border last:border-0">
-                    <div className ="flex flex-row items-center gap-3">
-                      <div className="bg-sky-500/80 p-5 rounded-md">
-                        <img
-                            src={icon}
-                            alt="Lingkungan perumahan yang nyaman dan asri"
-                            className="w-full h-full object-cover opacity-35"
-                          />
+                    <div key={role} className="flex items-center justify-between py-2.5 border-b border-border last:border-0 gap-4">
+                      <div className="flex flex-row items-center gap-3 min-w-0">
+                        {/* Container Avatar dengan Ukuran Tetap */}
+                        <div className="w-11 h-11 rounded-full overflow-hidden bg-sky-100 flex items-center justify-center flex-shrink-0 border border-sky-200 text-sky-600 font-semibold text-sm">
+                          {icon.startsWith("http") ? (
+                            <img
+                              src={icon}
+                              alt={name}
+                              className="w-full h-full object-cover"
+                            />
+                          ) : (
+                            <span>{icon}</span>
+                          )}
+                        </div>
+                        
+                        {/* Detail Nama & Jabatan */}
+                        <div className="min-w-0">
+                          <div className="text-xs text-primary font-semibold">{role}</div>
+                          <div className="text-foreground font-medium text-sm truncate">{name}</div>
+                        </div>
                       </div>
-                      <div>
-                        <div className="text-xs text-primary font-semibold">{role}</div>
-                        <div className="text-foreground font-medium text-sm">{name}</div>
-                      </div>
+                      
+                      {/* Nomor Telepon */}
+                      <a
+                        href={`tel:${phone.replace(/-/g, "")}`}
+                        className="text-xs text-muted-foreground hover:text-primary transition-colors font-['DM_Mono',monospace] flex-shrink-0"
+                      >
+                        {phone}
+                      </a>
                     </div>
-                    <a
-                      href={`tel:${phone.replace(/-/g, "")}`}
-                      className="text-xs text-muted-foreground hover:text-primary transition-colors font-['DM_Mono',monospace]"
-                    >
-                      {phone}
-                    </a>
-                  </div>
-                ))}
+                  ))}
               </div>
             </div>
           </div>
