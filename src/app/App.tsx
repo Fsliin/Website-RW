@@ -2,9 +2,12 @@ import { useState } from "react";
 import { Menu, X, MapPin, Phone, Mail, ChevronDown, TrendingUp, TrendingDown, Wallet, Users, Shield, Trash2, Bell } from "lucide-react";
 
 // ─── Data ────────────────────────────────────────────────────────────────────
+// 1. IMPORT FOTO KAMU DI SINI (Taruh di bawah baris import library)
+import fotoIbuRw from "./PENGURUS/ibu_rw.png";
 
+// 2. MASUKKAN VARIABELNYA KE DALAM ARRAY
 const management = [
-  { icon:"/src/PENGURUS/ibu rw.png", role: "Ketua_RW", name: "Ibu. Dewi Fatimah", phone: "0812-3456-7890" },
+  { icon:fotoIbuRw, role: "Ketua_RW", name: "Ibu. Dewi Fatimah", phone: "0812-3456-7890" },
   { icon:"https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "Sekretaris", name: "Dummy", phone: "0856-7890-1234" },
   { icon:"https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "Bendahara", name: "Dummy", phone: "0878-2345-6789" },
   { icon:"https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "RT 1", name: "Ibu Teti & Bpk Awab", phone: "0821-dummy" },
