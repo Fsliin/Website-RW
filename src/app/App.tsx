@@ -12,7 +12,7 @@ import fotoIbuRw from "../PENGURUS/ibu_rw.png";
 import sekertaris from "../PENGURUS/sekertaris.png";
 import bendahara from "../PENGURUS/bendahara.png";
 import rt_1 from "../PENGURUS/rt_1.png";
-import rt_2 from "../PENGURUS/rt_2.png";
+import rt_2 from "../PENGURUS/rt_2.jpg";
 
 
 // 2. MASUKKAN VARIABELNYA KE DALAM ARRAY
