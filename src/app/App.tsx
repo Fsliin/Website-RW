@@ -11,7 +11,7 @@ import fotoRt1 from "../PENGURUS/rt_1.png";
 import fotoRt2 from "../PENGURUS/rt_2.png";
 
 // 2. IMPORT FOTO GALERI KEGIATAN
-import fotoRapat Bulanan from "../GALERI/rapat_bulanan.png";
+import fotoRapatBulanan from "../GALERI/rapat_bulanan.png";
 import fotoKerjaBakti from "../GALERI/kerja_bakti.png";
 import fotoBazaarWarga from "../GALERI/bazaar_warga.png";
 import fotoLingkungan from "../GALERI/lingkungan_kami.png";
