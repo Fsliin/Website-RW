@@ -265,7 +265,7 @@ function About() {
                       <div className="flex flex-row items-center gap-3 min-w-0">
                         {/* Container Avatar dengan Ukuran Tetap */}
                         <div className="w-11 h-11 rounded-full overflow-hidden bg-sky-100 flex items-center justify-center flex-shrink-0 border border-sky-200 text-sky-600 font-semibold text-sm">
-                          {icon.startsWith("http") ? (
+                          {icon.length > 2 || icon.startsWith("http") ? (
                             <img
                               src={icon}
                               alt={name}
