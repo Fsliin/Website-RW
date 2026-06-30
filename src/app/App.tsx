@@ -2,48 +2,61 @@ import { useState } from "react";
 import { Menu, X, MapPin, Phone, Mail, ChevronDown, TrendingUp, TrendingDown, Wallet, Users, Shield, Trash2, Bell } from "lucide-react";
 
 // ─── Data ────────────────────────────────────────────────────────────────────
-// 1. IMPORT FOTO (Sudah diperbaiki jalurnya agar keluar dari folder 'app' terlebih dahulu)
-import fotoIbuRw from "../PENGURUS/ibu_rw.png";
 
-// 2. MASUKKAN VARIABELNYA KE DALAM ARRAY
+// 1. IMPORT FOTO PENGURUS
+import fotoIbuRw from "../PENGURUS/ibu_rw.png";
+import fotoSekretaris from "../PENGURUS/sekretaris.png";
+import fotoBendahara from "../PENGURUS/bendahara.png";
+import fotoRt1 from "../PENGURUS/rt_1.png";
+import fotoRt2 from "../PENGURUS/rt_2.png";
+
+// 2. IMPORT FOTO GALERI KEGIATAN
+import fotoRapat Bulanan from "../GALERI/rapat_bulanan.png";
+import fotoKerjaBakti from "../GALERI/kerja_bakti.png";
+import fotoBazaarWarga from "../GALERI/bazaar_warga.png";
+import fotoLingkungan from "../GALERI/lingkungan_kami.png";
+import fotoMusyawarahRt from "../GALERI/musyawarah_rt.png";
+
+// 3. SUSUNAN PENGURUS ARRAY
 const management = [
   { icon: fotoIbuRw, role: "Ketua_RW", name: "Ibu. Dewi Fatimah", phone: "0812-3456-7890" },
-  { icon: "https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "Sekretaris", name: "Dummy", phone: "0856-7890-1234" },
-  { icon: "https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "Bendahara", name: "Dummy", phone: "0878-2345-6789" },
-  { icon: "https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "RT 1", name: "Ibu Teti & Bpk Awab", phone: "0821-dummy" },
-  { icon: "https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "RT 2", name: "Dummy", phone: "0821-dummy" },
+  { icon: fotoSekretaris, role: "Sekretaris", name: "Nama Sekretaris Anda", phone: "0856-7890-1234" },
+  { icon: fotoBendahara, role: "Bendahara", name: "Nama Bendahara Anda", phone: "0878-2345-6789" },
+  { icon: fotoRt1, role: "RT 1", name: "Ibu Teti & Bpk Awab", phone: "0821-dummy" },
+  { icon: fotoRt2, role: "RT 2", name: "Nama Ketua RT 2", phone: "0821-dummy" },
   { icon: "AH", role: "RT 3", name: "Ibu Eni & Bpk Burhan", phone: "0821-dummy" },
   { icon: "AH", role: "RT 4", name: "Bpk Yadi", phone: "0821-dummy" },
   { icon: "AH", role: "RT 5", name: "Ibu Mariyam & Bpk Din Din", phone: "0821-dummy" },
 ];
 
+// 4. GALERI KEGIATAN ARRAY
 const galleryItems = [
   {
-    url: "https://images.unsplash.com/photo-1517456793572-1d8efd6dc135?w=600&h=400&fit=crop&auto=format",
+    url: fotoRapatBulanan,
     alt: "Warga berkumpul dalam acara kebersamaan RT",
     label: "Rapat Warga Bulanan",
     span: "col-span-2",
   },
   {
-    url: "https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format",
+    url: fotoKerjaBakti,
     alt: "Kegiatan bersih-bersih lingkungan",
     label: "Kerja Bakti",
     span: "",
   },
   {
-    url: "https://images.unsplash.com/photo-1777817530517-bd54a0574213?w=600&h=400&fit=crop&auto=format",
+    url: fotoBazaarWarga,
     alt: "Kegiatan pasar rakyat dan bazaar komunitas",
     label: "Bazaar Warga",
     span: "",
   },
   {
-    url: "https://images.unsplash.com/photo-1566205865731-51803de32a35?w=600&h=400&fit=crop&auto=format",
+    url: fotoLingkungan,
     alt: "Lingkungan perumahan yang asri",
     label: "Lingkungan Kami",
     span: "",
   },
   {
-    url: "https://images.unsplash.com/photo-1762040598334-51d816d8f71c?w=600&h=400&fit=crop&auto=format",
+    url: fotoMusyawarahRt,
     alt: "Musyawarah warga dan diskusi komunitas",
     label: "Musyawarah RT",
     span: "col-span-2",
@@ -227,7 +240,7 @@ function About() {
               RW Mekarsari 04 Merupakan RW terletak di mekarsari kec cibatu kab garut, Kami berkomitmen untuk memberikan pelayanan terbaik, menjaga keamanan, kebersihan, dan keharmonisan lingkungan bersama.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Setiap warga berhak mengetahui pengelolaan dana secara terbuka. Laporan keuangan dipublikasikan setiap bulan agar tercipta kepercayaan dan akuntabilitas bersama, dan informasi kegiatan yang akan datang.
+              Every citizen has the right to know open financial management. Financial reports are published every month to build trust and shared accountability, along with information on upcoming activities.
             </p>
 
             <div className="grid grid-cols-2 gap-3">
@@ -551,7 +564,7 @@ function Footer() {
   );
 }
 
-// ─── App ──────────────────────────────────────────────────────────────────────
+// ─── App Main ─────────────────────────────────────────────────────────────────
 
 export default function App() {
   return (
