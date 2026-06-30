@@ -2,19 +2,19 @@ import { useState } from "react";
 import { Menu, X, MapPin, Phone, Mail, ChevronDown, TrendingUp, TrendingDown, Wallet, Users, Shield, Trash2, Bell } from "lucide-react";
 
 // ─── Data ────────────────────────────────────────────────────────────────────
-// 1. IMPORT FOTO KAMU DI SINI (Taruh di bawah baris import library)
-import fotoIbuRw from "./src/PENGURUS/ibu_rw.png";
+// 1. IMPORT FOTO (Sudah diperbaiki jalurnya agar keluar dari folder 'app' terlebih dahulu)
+import fotoIbuRw from "../src/PENGURUS/ibu_rw.png";
 
 // 2. MASUKKAN VARIABELNYA KE DALAM ARRAY
 const management = [
-  { icon:fotoIbuRw, role: "Ketua_RW", name: "Ibu. Dewi Fatimah", phone: "0812-3456-7890" },
-  { icon:"https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "Sekretaris", name: "Dummy", phone: "0856-7890-1234" },
-  { icon:"https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "Bendahara", name: "Dummy", phone: "0878-2345-6789" },
-  { icon:"https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "RT 1", name: "Ibu Teti & Bpk Awab", phone: "0821-dummy" },
-  { icon:"https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "RT 2", name: "Dummy", phone: "0821-dummy" },
-  { icon:"AH", role: "RT 3", name: "Ibu Eni & Bpk Burhan", phone: "0821-dummy" },
-  { icon:"AH", role: "RT 4", name: "Bpk Yadi", phone: "0821-dummy" },
-  { icon:"AH", role: "RT 5", name: "Ibu Mariyam & Bpk Din Din", phone: "0821-dummy" },
+  { icon: fotoIbuRw, role: "Ketua_RW", name: "Ibu. Dewi Fatimah", phone: "0812-3456-7890" },
+  { icon: "https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "Sekretaris", name: "Dummy", phone: "0856-7890-1234" },
+  { icon: "https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "Bendahara", name: "Dummy", phone: "0878-2345-6789" },
+  { icon: "https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "RT 1", name: "Ibu Teti & Bpk Awab", phone: "0821-dummy" },
+  { icon: "https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "RT 2", name: "Dummy", phone: "0821-dummy" },
+  { icon: "AH", role: "RT 3", name: "Ibu Eni & Bpk Burhan", phone: "0821-dummy" },
+  { icon: "AH", role: "RT 4", name: "Bpk Yadi", phone: "0821-dummy" },
+  { icon: "AH", role: "RT 5", name: "Ibu Mariyam & Bpk Din Din", phone: "0821-dummy" },
 ];
 
 const galleryItems = [
@@ -59,12 +59,12 @@ interface FinancialRow {
 }
 
 const financialData: FinancialRow[] = [
-  { month: "Januari 2025", income: 3_200_000, expenses: 2_150_000, balance: 1_050_000, notes: "Pengecatan tiang RT" },
-  { month: "Februari 2025", income: 3_100_000, expenses: 1_800_000, balance: 1_300_000, notes: "Operasional rutin" },
-  { month: "Maret 2025", income: 3_200_000, expenses: 2_400_000, balance: 800_000, notes: "Perbaikan lampu jalan" },
-  { month: "April 2025", income: 3_000_000, expenses: 1_950_000, balance: 1_050_000, notes: "Operasional rutin" },
-  { month: "Mei 2025", income: 3_200_000, expenses: 3_100_000, balance: 100_000, notes: "Acara 17 Agustus (persiapan)" },
-  { month: "Juni 2025", income: 3_200_000, expenses: 2_200_000, balance: 1_000_000, notes: "Operasional + kebersihan" },
+  { month: "Januari 2025", income: 3200000, expenses: 2150000, balance: 1050000, notes: "Pengecatan tiang RT" },
+  { month: "Februari 2025", income: 3100000, expenses: 1800000, balance: 1300000, notes: "Operasional rutin" },
+  { month: "Maret 2025", income: 3200000, expenses: 2400000, balance: 800000, notes: "Perbaikan lampu jalan" },
+  { month: "April 2025", income: 3000000, expenses: 1950000, balance: 1050000, notes: "Operasional rutin" },
+  { month: "Mei 2025", income: 3200000, expenses: 3100000, balance: 100000, notes: "Acara 17 Agustus (persiapan)" },
+  { month: "Juni 2025", income: 3200000, expenses: 2200000, balance: 1000000, notes: "Operasional + kebersihan" },
 ];
 
 const announcements = [
@@ -263,28 +263,24 @@ function About() {
                 {management.map(({ icon, role, name, phone }) => (
                     <div key={role} className="flex items-center justify-between py-2.5 border-b border-border last:border-0 gap-4">
                       <div className="flex flex-row items-center gap-3 min-w-0">
-                        {/* Container Avatar dengan Ukuran Tetap */}
-                          <div className="w-11 h-11 rounded-full overflow-hidden bg-sky-100 flex items-center justify-center flex-shrink-0 border border-sky-200 text-sky-600 font-semibold text-sm">
-                            {/* JIKA panjang teks lebih dari 2 karakter ATAU diawali http, BERARTI itu adalah gambar (baik link unsplash maupun hasil import) */}
-                          {icon.length > 2 || icon.startsWith("http") ? (
-                              <img
+                        <div className="w-11 h-11 rounded-full overflow-hidden bg-sky-100 flex items-center justify-center flex-shrink-0 border border-sky-200 text-sky-600 font-semibold text-sm">
+                          {typeof icon === "string" && !icon.startsWith("http") && icon.length <= 2 ? (
+                            <span>{icon}</span>
+                          ) : (
+                            <img
                               src={icon}
                               alt={name}
                               className="w-full h-full object-cover"
                             />
-                          ) : (
-                            <span>{icon}</span>
                           )}
                         </div>
                         
-                        {/* Detail Nama & Jabatan */}
                         <div className="min-w-0">
                           <div className="text-xs text-primary font-semibold">{role}</div>
                           <div className="text-foreground font-medium text-sm truncate">{name}</div>
                         </div>
                       </div>
                       
-                      {/* Nomor Telepon */}
                       <a
                         href={`tel:${phone.replace(/-/g, "")}`}
                         className="text-xs text-muted-foreground hover:text-primary transition-colors font-['DM_Mono',monospace] flex-shrink-0"
@@ -379,7 +375,6 @@ function FinancialDashboard() {
           </p>
         </div>
 
-        {/* Summary cards */}
         <div className="grid grid-cols-3 gap-4 mb-8 max-sm:grid-cols-1">
           {[
             {
@@ -419,7 +414,6 @@ function FinancialDashboard() {
           ))}
         </div>
 
-        {/* Table */}
         <div className="bg-card border border-border rounded-2xl overflow-hidden">
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
@@ -495,7 +489,6 @@ function Footer() {
     <footer id="kontak" className="bg-foreground text-white">
       <div className="max-w-6xl mx-auto px-5 pt-16 pb-8">
         <div className="grid md:grid-cols-3 gap-10 mb-12">
-          {/* Brand */}
           <div>
             <div className="flex items-center gap-2.5 mb-4">
               <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center flex-shrink-0">
@@ -525,7 +518,6 @@ function Footer() {
             </div>
           </div>
 
-          {/* Announcements */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-5">
               <Bell size={15} className="text-primary" />
