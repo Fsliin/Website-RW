@@ -9,7 +9,10 @@ import { Menu, X, MapPin, Phone, Mail, ChevronDown, TrendingUp, TrendingDown, Wa
 // 1. IMPORT FOTO (Sudah diperbaiki jalurnya agar keluar dari folder 'app' terlebih dahulu)
 
 import fotoIbuRw from "../PENGURUS/ibu_rw.png";
-
+import sekertaris from "../PENGURUS/sekertaris.png";
+import bendahara from "../PENGURUS/bendahara.png";
+import rt_1 from "../PENGURUS/rt_1.png";
+import rt_2 from "../PENGURUS/rt_2.png";
 
 
 // 2. MASUKKAN VARIABELNYA KE DALAM ARRAY
@@ -18,13 +21,13 @@ const management = [
 
   { icon: fotoIbuRw, role: "Ketua_RW", name: "Ibu. Dewi Fatimah", phone: "0812-3456-7890" },
 
-  { icon: "https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "Sekretaris", name: "Dummy", phone: "0856-7890-1234" },
+  { icon: sekertaris, role: "Sekretaris", name: "Dummy", phone: "0856-7890-1234" },
 
-  { icon: "https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "Bendahara", name: "Dummy", phone: "0878-2345-6789" },
+  { icon: bendahara, role: "Bendahara", name: "Dummy", phone: "0878-2345-6789" },
 
-  { icon: "https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "RT 1", name: "Ibu Teti & Bpk Awab", phone: "0821-dummy" },
+  { icon: rt_1, role: "RT 1", name: "Ibu Teti & Bpk Awab", phone: "0821-dummy" },
 
-  { icon: "https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format", role: "RT 2", name: "Dummy", phone: "0821-dummy" },
+  { icon: rt_2, role: "RT 2", name: "Dummy", phone: "0821-dummy" },
 
   { icon: "AH", role: "RT 3", name: "Ibu Eni & Bpk Burhan", phone: "0821-dummy" },
 
