@@ -3,7 +3,7 @@ import { Menu, X, MapPin, Phone, Mail, ChevronDown, TrendingUp, TrendingDown, Wa
 
 // ─── Data ────────────────────────────────────────────────────────────────────
 // 1. IMPORT FOTO (Sudah diperbaiki jalurnya agar keluar dari folder 'app' terlebih dahulu)
-import fotoIbuRw from "../src/PENGURUS/ibu_rw.png";
+import fotoIbuRw from "../PENGURUS/ibu_rw.png";
 
 // 2. MASUKKAN VARIABELNYA KE DALAM ARRAY
 const management = [
