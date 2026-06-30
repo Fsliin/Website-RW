@@ -6,13 +6,21 @@ import { Menu, X, MapPin, Phone, Mail, ChevronDown, TrendingUp, TrendingDown, Wa
 
 // ─── Data ────────────────────────────────────────────────────────────────────
 
-// 1. IMPORT FOTO (Sudah diperbaiki jalurnya agar keluar dari folder 'app' terlebih dahulu)
+// 1A. IMPORT FOTO PENGURUS (Sudah diperbaiki jalurnya agar keluar dari folder 'app' terlebih dahulu)
 
 import fotoIbuRw from "../PENGURUS/ibu_rw.png";
 import sekertaris from "../PENGURUS/sekertaris.png";
 import bendahara from "../PENGURUS/bendahara.png";
 import rt_1 from "../PENGURUS/rt_1.png";
 import rt_2 from "../PENGURUS/rt_2.jpg";
+
+
+// 1B. IMPORT FOTO GALERI
+import rapatbulanan from "../GALERI/rapat_bulanan.png";
+import musyawarah_rt from "../GALERI/musyawarah_rt.jpg";
+import lingkungan_kami from "../GALERI/lingkungan_kami.png";
+import kerja_bakti from "../GALERI/kerja_bakti.png";
+import bazaar_warga from "../GALERI/bazaar_warga.jpg";
 
 
 // 2. MASUKKAN VARIABELNYA KE DALAM ARRAY
@@ -40,67 +48,37 @@ const management = [
 
 
 const galleryItems = [
-
   {
-
-    url: "https://images.unsplash.com/photo-1517456793572-1d8efd6dc135?w=600&h=400&fit=crop&auto=format",
-
-    alt: "Warga berkumpul dalam acara kebersamaan RT",
-
-    label: "Rapat Warga Bulanan",
-
+    url: rapatbulanan, // <-- Ganti link Unsplash lama dengan variabel import foto baru
+    alt: "Warga sedang berdiskusi dalam rapat rutin RW",
+    label: "Rapat Bulanan Warga",
+    span: "col-span-2", // Membuat ukuran foto ini melebar (bisa dibiarkan tetap)
+  },
+  {
+    url: kerja_bakti, // <-- Ganti dengan variabel foto kerja bakti Anda
+    alt: "Aktivitas warga membersihkan saluran air",
+    label: "Kerja Bakti Lingkungan",
     span: "col-span-2",
-
   },
-
   {
-
-    url: "https://images.unsplash.com/photo-1758599668209-783bd3691ec8?w=600&h=400&fit=crop&auto=format",
-
-    alt: "Kegiatan bersih-bersih lingkungan",
-
-    label: "Kerja Bakti",
-
-    span: "",
-
-  },
-
-  {
-
-    url: "https://images.unsplash.com/photo-1777817530517-bd54a0574213?w=600&h=400&fit=crop&auto=format",
-
-    alt: "Kegiatan pasar rakyat dan bazaar komunitas",
-
-    label: "Bazaar Warga",
-
-    span: "",
-
-  },
-
-  {
-
-    url: "https://images.unsplash.com/photo-1566205865731-51803de32a35?w=600&h=400&fit=crop&auto=format",
-
-    alt: "Lingkungan perumahan yang asri",
-
-    label: "Lingkungan Kami",
-
-    span: "",
-
-  },
-
-  {
-
-    url: "https://images.unsplash.com/photo-1762040598334-51d816d8f71c?w=600&h=400&fit=crop&auto=format",
-
-    alt: "Musyawarah warga dan diskusi komunitas",
-
-    label: "Musyawarah RT",
-
+    url: bazaar_warga, // Bisa tetap pakai link internet jika mau
+    alt: "Kegiatan bazaar makanan warga",
+    label: "Bazaar Ramadhan",
     span: "col-span-2",
-
   },
-
+   {
+    url: musyawarah_rt, // Bisa tetap pakai link internet jika mau
+    alt: "Kegiatan Musyawarah RT",
+    label: "Kegiatan musyawarah RT lahh",
+    span: "col-span-2",
+  },
+   {
+    url: lingkungan_kami, // Bisa tetap pakai link internet jika mau
+    alt: "Keamanan lingkungan kami",
+    label: "lingkungan kami",
+    span: "col-span-2",
+  },
+  // ... sesuaikan sisanya ke bawah
 ];
 
 
