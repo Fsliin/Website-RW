@@ -27,7 +27,7 @@ import bazaar_warga from "../GALERI/bazaar_warga.jpg";
 
 const management = [
 
-  { icon: fotoIbuRw, role: "Ketua_RW", name: "Ibu. Dewi Fatimah", phone: "0812-3456-7890" },
+  { icon: fotoIbuRw, role: "Ketua_RW", name: "Ibu. Dewi Fatimah", phone: "0831-0059-0764" },
 
   { icon: sekertaris, role: "Sekretaris", name: "Dummy", phone: "0856-7890-1234" },
 
