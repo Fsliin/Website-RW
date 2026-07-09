@@ -606,7 +606,7 @@ function Gallery() {
 
           <p className="text-muted-foreground mt-3 max-w-xl mx-auto">
 
-            Dokumentasi kegiatan dan acara komunitas RT 07 sepanjang tahun.
+            Dokumentasi kegiatan dan acara RW 04 sepanjang tahun.
 
           </p>
 
@@ -698,13 +698,13 @@ function FinancialDashboard() {
 
             style={{ fontSize: "clamp(1.75rem, 4vw, 2.5rem)", lineHeight: 1.2 }}>
 
-            Laporan IPL Warga 2025
+            Laporan Keuangan RW 04
 
           </h2>
 
           <p className="text-muted-foreground mt-3 max-w-xl mx-auto">
 
-            Rincian pemasukan, pengeluaran, dan saldo iuran pemeliharaan lingkungan (IPL) setiap bulan secara terbuka.
+            Rincian pemasukan, pengeluaran, dan saldo setiap bulan secara terbuka.
 
           </p>
 
@@ -916,7 +916,7 @@ function FinancialDashboard() {
 
         <p className="text-xs text-muted-foreground mt-4 text-center">
 
-          Laporan keuangan diverifikasi oleh Bendahara RT. Pertanyaan? Hubungi Bpk. Agus Wijaya di 0878-2345-6789.
+          Laporan keuangan diverifikasi oleh Bendahara dan Sekertaris RW 04. Apabila ada Pertanyaan, Hubungi Bendahara dan Sekertaris.
 
         </p>
 
@@ -946,15 +946,15 @@ function Footer() {
 
               <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center flex-shrink-0">
 
-                <span className="text-white font-extrabold text-sm">RT</span>
+                <span className="text-white font-extrabold text-sm">RW</span>
 
               </div>
 
               <div>
 
-                <div className="font-bold text-white">RT 07 / RW 03</div>
+                <div className="font-bold text-white">RW 04</div>
 
-                <div className="text-white/50 text-xs">Kelurahan Sukamaju, Depok</div>
+                <div className="text-white/50 text-xs">Kelurahan Mekarsari, Cibatu, Garut</div>
 
               </div>
 
@@ -972,7 +972,7 @@ function Footer() {
 
                 <Phone size={14} className="text-primary flex-shrink-0" />
 
-                0812-3456-7890 (Ketua RT)
+                0831-0059-0764 (Ketua RW)
 
               </a>
 
@@ -980,7 +980,7 @@ function Footer() {
 
                 <Mail size={14} className="text-primary flex-shrink-0" />
 
-                rt07rw03.sukamaju@gmail.com
+                RW04@gmail.com
 
               </div>
 
@@ -988,7 +988,7 @@ function Footer() {
 
                 <MapPin size={14} className="text-primary flex-shrink-0 mt-0.5" />
 
-                Jl. Melati Raya No. 7, Sukamaju, Beji, Depok 16421
+                Desa Mekarsari, Kecamatan Cibatu, Garut 44185
 
               </div>
 
@@ -1042,13 +1042,13 @@ function Footer() {
 
           <p className="text-white/40 text-xs">
 
-            © 2025 RT 07 / RW 03 Kelurahan Sukamaju. Semua hak dilindungi.
+            © 2026 Desa Mekarsari, Kecamatan Cibatu, Garut.
 
           </p>
 
           <p className="text-white/30 text-xs">
 
-            Dikelola oleh Pengurus RT · Periode 2023–2026
+            Dikelola oleh Pengurus RW
 
           </p>
 
