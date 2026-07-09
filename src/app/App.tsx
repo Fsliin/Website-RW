@@ -19,14 +19,14 @@ import bazaar_warga from "../GALERI/bazaar_warga.jpg";
 
 // 2. MASUKKAN VARIABELNYA KE DALAM ARRAY (Sudah Ditambahkan properti phone agar tidak crash)
 const management = [
-  { icon: fotoIbuRw, role: "Ketua_RW", name: "Ibu. Dewi Fatimah", phone: "08123456789" },
-  { icon: sekertaris, role: "Sekretaris", name: "Dummy", phone: "dummy" },
-  { icon: bendahara, role: "Bendahara", name: "Dummy", phone: "dummy" },
-  { icon: rt_1, role: "RT 1", name: "Ibu Teti & Bpk Awab", phone: "08123456789" },
-  { icon: rt_2, role: "RT 2", name: "Dummy", phone: "dummy" },
-  { icon: "AH", role: "RT 3", name: "Ibu Eni & Bpk Burhan", phone: "08123456789" },
-  { icon: "AH", role: "RT 4", name: "Bpk Yadi", phone: "08123456789" },
-  { icon: "AH", role: "RT 5", name: "Ibu Mariyam & Bpk Din Din", phone: "08123456789" },
+  { icon: fotoIbuRw, role: "Ketua_RW", name: "Ibu. Dewi Fatimah"},
+  { icon: sekertaris, role: "Sekretaris", name: "Dummy"},
+  { icon: bendahara, role: "Bendahara", name: "Dummy"},
+  { icon: rt_1, role: "RT 1", name: "Ibu Teti & Bpk Awab"},
+  { icon: rt_2, role: "RT 2", name: "Dummy"},
+  { icon: "AH", role: "RT 3", name: "Ibu Eni & Bpk Burhan"},
+  { icon: "AH", role: "RT 4", name: "Bpk Yadi"},
+  { icon: "AH", role: "RT 5", name: "Ibu Mariyam & Bpk Din Din"},
 ];
 
 const galleryItems = [
