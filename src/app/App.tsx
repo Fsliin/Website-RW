@@ -293,16 +293,6 @@ function About() {
                         <div className="text-foreground font-medium text-sm truncate">{name}</div>
                       </div>
                     </div>
-                    
-                    {/* Menggunakan Optional Chaining (?.) agar aman jika phone kosong */}
-                    <a
-                      href={phone?.includes("dummy") ? "#" : `https://wa.me/62${phone?.replace(/\D/g, "").replace(/^0/, "")}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs text-muted-foreground hover:text-primary transition-colors font-['DM_Mono',monospace] flex-shrink-0"
-                    >
-                      {phone || "-"}
-                    </a>
                   </div>
                 ))}
               </div>
