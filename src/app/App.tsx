@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Menu, X, MapPin, Phone, Mail, ChevronDown, TrendingUp, TrendingDown, Wallet, Users, Shield, Trash2, Bell } from "lucide-react";
+import { Menu, X, MapPin, Phone, Mail, ChevronDown, TrendingUp, TrendingDown, Wallet, Users, Shield, Trash2, Bell, MessageSquareMore } from "lucide-react";
 
 
 
@@ -27,21 +27,21 @@ import bazaar_warga from "../GALERI/bazaar_warga.jpg";
 
 const management = [
 
-  { icon: fotoIbuRw, role: "Ketua_RW", name: "Ibu. Dewi Fatimah", phone: "0831-0059-0764" },
+  { icon: fotoIbuRw, role: "Ketua_RW", name: "Ibu. Dewi Fatimah"},
 
-  { icon: sekertaris, role: "Sekretaris", name: "Dummy", phone: "0856-7890-1234" },
+  { icon: sekertaris, role: "Sekretaris", name: "Dummy"},
 
-  { icon: bendahara, role: "Bendahara", name: "Dummy", phone: "0878-2345-6789" },
+  { icon: bendahara, role: "Bendahara", name: "Dummy"},
 
-  { icon: rt_1, role: "RT 1", name: "Ibu Teti & Bpk Awab", phone: "0821-dummy" },
+  { icon: rt_1, role: "RT 1", name: "Ibu Teti & Bpk Awab"},
 
-  { icon: rt_2, role: "RT 2", name: "Dummy", phone: "0821-dummy" },
+  { icon: rt_2, role: "RT 2", name: "Dummy"},
 
-  { icon: "AH", role: "RT 3", name: "Ibu Eni & Bpk Burhan", phone: "0821-dummy" },
+  { icon: "AH", role: "RT 3", name: "Ibu Eni & Bpk Burhan"},
 
-  { icon: "AH", role: "RT 4", name: "Bpk Yadi", phone: "0821-dummy" },
+  { icon: "AH", role: "RT 4", name: "Bpk Yadi"},
 
-  { icon: "AH", role: "RT 5", name: "Ibu Mariyam & Bpk Din Din", phone: "0821-dummy" },
+  { icon: "AH", role: "RT 5", name: "Ibu Mariyam & Bpk Din Din"},
 
 ];
 
@@ -329,37 +329,34 @@ function Hero() {
 
 
 
-        <div className="flex flex-wrap items-center justify-center gap-4">
-
-          <a
-
-            href="#keuangan"
-
-            className="inline-flex items-center gap-2 bg-primary text-white font-semibold px-6 py-3 rounded-xl hover:bg-primary/90 transition-all hover:shadow-lg hover:shadow-primary/30 active:scale-95"
-
-          >
-
-            <Wallet size={16} />
-
-            Laporan Keuangan
-
-          </a>
-
-          <a
-
-            href="#tentang-kami"
-
-            className="inline-flex items-center gap-2 bg-white/10 border border-white/25 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-all backdrop-blur-sm"
-
-          >
-
-            Kenali Kami
-
-            <ChevronDown size={16} />
-
-          </a>
-
-        </div>
+                 <div className="flex flex-wrap items-center justify-center gap-4">
+            <a
+              href="#keuangan"
+              className="inline-flex items-center gap-2 bg-primary text-white font-semibold px-6 py-3 rounded-xl hover:bg-primary/90 transition-all hover:shadow-lg hover:shadow-primary/30 active:scale-95 text-sm"
+            >
+              <Wallet size={16} />
+              Laporan Keuangan
+            </a>
+          
+            {/* TOMBOL HELPDESK WHATSAPP BARU */}
+            <a
+              href="https://wa.me/6281234567890?text=Halo%20Helpdesk%20RW%2004,%20saya%20ingin%20bertanya..."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-emerald-600 text-white font-semibold px-6 py-3 rounded-xl hover:bg-emerald-500 transition-all hover:shadow-lg hover:shadow-emerald-600/30 active:scale-95 text-sm"
+            >
+              <MessageSquareMore size={16} />
+              Helpdesk Warga
+            </a>
+          
+            <a
+              href="#tentang-kami"
+              className="inline-flex items-center gap-2 bg-white/10 border border-white/25 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/20 transition-all backdrop-blur-sm text-sm"
+            >
+              Kenali Kami
+              <ChevronDown size={16} />
+            </a>
+          </div>
 
       </div>
 
@@ -968,13 +965,6 @@ function Footer() {
 
             <div className="mt-5 space-y-2 text-sm">
 
-              <a href="tel:08123456789" className="flex items-center gap-2 text-white/60 hover:text-white transition-colors">
-
-                <Phone size={14} className="text-primary flex-shrink-0" />
-
-                0831-0059-0764 (Ketua RW)
-
-              </a>
 
               <div className="flex items-center gap-2 text-white/60">
 
